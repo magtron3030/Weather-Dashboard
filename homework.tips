@@ -1,0 +1,14 @@
+
+
+1. We have to make two api calls to get todays weather and one for the forecast
+2. openwethermap.org/api for weather apis
+END OF CLASS VIDEO 4/11 HW FETCH CALL API TIPS!!!!!
+3. first api call is to get lat and lomg of whatever city the person types in
+4.When you get back the weather forcast, it doesnt give you one forcast, it gives you 8. Just use one of those 8 blocks. HINT: use a for loop and dont increment by 1. 
+5. use the 5 day/3 hour forcast on openweather
+6. use the geocoding api for the lat/long
+then you call the 5day/3 hour forcast
+
+
+
+
