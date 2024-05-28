@@ -40,7 +40,7 @@ document.querySelector(".pastSearches").appendChild(button);
    }
 };
 
-
+//save to local storage
 function readLocalStorage() {
    let string = localStorage.getItem("city");
    let cityWeather = JSON.parse(string) || [];
@@ -53,7 +53,7 @@ function saveToStorage(cityWeather) {
 };
 
 
-
+//make card content to populate
 function dataPopulate() {
    const weather = readLocalStorage();
    const todayContainer = document.querySelector(".today");
@@ -63,7 +63,7 @@ function dataPopulate() {
    todayContainer.appendChild(cityName);
 
    const today = document.createElement("div");
-   today.classList.add("theBest");
+   today.classList.add("boxes");
    todayContainer.appendChild(today);
 
    const dateToday = document.createElement("p");
@@ -87,7 +87,7 @@ function dataPopulate() {
 
    for (let i = 0; i < weather.list.length; i += 8) {
        const forecast = document.createElement("div");
-       forecast.classList.add("theBest");
+       forecast.classList.add("boxes");
        forecastContainer.appendChild(forecast);
 
        const dateForecast = document.createElement("p");
